@@ -1,3 +1,4 @@
+require 'sinatra'
 # Sinatra
 app_file = File.join(File.dirname(__FILE__), *%w[.. .. html2haml.rb])
 require app_file

@@ -1,5 +1,3 @@
-require "rubygems"
-require "sinatra"
 require "haml"
 require "haml/html"
 
