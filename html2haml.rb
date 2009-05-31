@@ -33,6 +33,8 @@ end
 template :index do
   <<-HTML  
 %html
+  %head
+    %title HTML2Haml | Convert HTML Snippets to Haml
   %body{:style => "margin: 20px 100px;color:gray;font-family: Arial"}
     %h6{:style => "float:right;"}
       Haml
