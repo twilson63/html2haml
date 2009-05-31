@@ -3,9 +3,16 @@ Feature: Convert Html 2 Haml
   As a guest
   I want to copy a snippet of html into a text box and press covert to haml and display the haml in a results text area
   
-  @current
+  @working
   Scenario: Copy Html and Convert to Haml
     Given I go to /
     And I fill in "Html" with "<h1>Hello World</h1>"
     When I press "Convert"
     Then I should see "%h1"
+    
+  @current
+  Scenario: Post Html via JSON and Convert to Haml
+    Given I have a page object with "<h1>Hello World</h1>" in the html attribute
+    When I post the page object to /json
+    Then I should see "{page: { html: "<h1>Hello World</h1>", haml: "\n%h1\n  Hello World" }}"
+    
