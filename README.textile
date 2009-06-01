@@ -16,4 +16,7 @@ h2. Api
 
 You can also run the convert via a RestClient or Curl Client, by posting your html in the page_html parameter.
 
-Coming Soon.
+Coming Soon
+
+h2. License
+

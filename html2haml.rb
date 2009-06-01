@@ -6,27 +6,41 @@ get "/" do
   haml :index
 end
 
-post "/json" do
-  
-end
 
-post "/xml" do
-    
-end
-
-
-post "/" do
+post "/*" do
   #%x("html2haml #{params[:html]}")
   #input = params[:html]
-  @html = params["page"]["html"]
-  @haml = convert(@html)
-  puts @haml
-  haml :index
-  #params.inspect
+  puts params
+  #puts convert(params[:page][:html])
+  if params["page"]
+    @html = params["page"]["html"]
+    @haml = convert(@html)
+    if params[:splat].include?("json")
+      {:page => {:html => @html, :haml => @haml}}.to_json
+    elsif params[:splat].include?("xml")
+      to_xml
+    else
+      haml :index
+    end
+  end
 end
 
 def convert(html)
   Haml::HTML.new(@html).render
+end
+
+def to_xml
+  builder do |xml|
+    xml.instruct!
+    xml.page do
+      xml.html do
+        xml.cdata! @html
+      end
+      xml.haml do
+        xml.cdata! @haml
+      end
+    end
+  end  
 end
 
 
