@@ -71,6 +71,14 @@ template :index do
     %p
       Source at
       %a{:href => "http://github.com/twilson63/html2haml"} http://github.com/twilson63/html2haml
+    %script{ :type => "text/javascript" }
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{ :type => "text/javascript" }
+      try {
+      var pageTracker = _gat._getTracker("UA-9459466-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
   HTML
 end
 
