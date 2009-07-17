@@ -2,6 +2,11 @@ require "haml"
 require "haml/html"
 require "json"
 
+helpers do
+  include Rack::Utils
+  alias_method :h, :escape_html
+end
+
 get "/" do
   haml :index
 end
@@ -58,7 +63,7 @@ template :index do
     %hr
     %form{:method => "POST", :action => "/", :id => "page"}
       %label{:for => "page_html", :style => "display:block;"} Html (paste your html code and press convert)
-      %textarea{:id => "page_html", :name => "page[html]", :style => "width:800px;height:250px;"}= @html || ""
+      %textarea{:id => "page_html", :name => "page[html]", :style => "width:800px;height:250px;"}=h @html || ""
       %br
       %input{:type => "submit", :name => "commit", :value => "Convert", :style => "margin:20px;text-aligin:center;"}
       %br

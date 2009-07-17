@@ -10,9 +10,14 @@ Feature: Convert Html 2 Haml
     When I press "Convert"
     Then I should see "%h1"
     
-  @current
+  @working
   Scenario: Post Html via JSON and Convert to Haml
     Given I have a page object with "<h1>Hello World</h1>" in the html attribute
     When I post the page object to /json
     Then I should see "{page: { html: "<h1>Hello World</h1>", haml: "\n%h1\n  Hello World" }}"
     
+  @current
+  Scenario: Error with inserting TextArea in html
+    Given I have a page object with "<textarea>Hello World</textarea><b>outside</b>" in the html attribute
+    When I press "Convert"
+    Then I should see "<textarea>Hello World</textarea><b>outside</b>"
