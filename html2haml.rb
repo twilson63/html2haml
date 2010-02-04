@@ -13,10 +13,7 @@ end
 
 
 post "/*" do
-  #%x("html2haml #{params[:html]}")
-  #input = params[:html]
   puts params
-  #puts convert(params[:page][:html])
   if params["page"]
     @html = params["page"]["html"]
     @haml = convert(@html)
