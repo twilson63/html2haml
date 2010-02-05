@@ -42,7 +42,7 @@ Hugo do
                   :branch => 'HEAD',
                   :migrate => false,
                   :restart_command => 'bundle install && touch tmp/restart.txt',
-                  :web => { :port => '80'} 
+                  :web => { :port => '80', :server_name => 'html2haml.jackfile.com'} 
                 }  
               }
       
