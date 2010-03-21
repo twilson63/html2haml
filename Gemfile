@@ -1,5 +1,6 @@
 source :gemcutter
 
+gem 'thin'
 gem 'sinatra', '0.9.4'
 gem 'hpricot'
 gem 'haml'
