@@ -69,7 +69,7 @@ template :index do
     %hr
     %p
       This simple site created by Jack Russell Software...
-      %a{:href => "http://blog.jackhq.com"} http://blog.jackhq.com
+      %a{:href => "http://www.jackhq.com"} http://www.jackhq.com
     %p
       Source at
       %a{:href => "http://github.com/twilson63/html2haml"} http://github.com/twilson63/html2haml
