@@ -1,0 +1,57 @@
+%html
+  %head
+    %title HTML2Haml | Convert HTML Snippets to Haml
+    - %w{ reset text 960 app }.each do |css|
+      %link{ :href => "/stylesheets/#{css}.css", :rel => "stylesheet", :type => "text/css", :media => "screen", :charset => "utf-8" }
+    %meta{ :name => 'description', :content => 'Convert Html Code to Haml Code'  }
+    %meta{ :name => 'keywords', :content => 'haml, ruby, html, rails, ruby on rails'  }
+  %body
+    %h6
+      %a{:href => "http://haml.hamptoncatlin.com/"} Haml
+    %h1 Html2Haml
+    %p{:style => "margin:0px;"} Convert Html Snippets to Haml Snippets
+    %hr
+    .container_12
+      .grid_9
+        %form{:method => "POST", :action => "/", :id => "page"}
+          %label{:for => "page_html"} 
+            Html 
+            %span{:style => 'color:purple'} (paste your html code and press convert)
+          %textarea{:id => "page_html", :name => "page[html]"}=h @html || ""
+          %br
+          %input.button{:type => "submit", :name => "commit", :value => "Convert"}
+          %br
+          %label{:for => "page_html"} 
+            Haml 
+            %span{:style => 'color:green'} (Here is your html code in haml.)      
+          %textarea{:id => "page_haml", :name => "page[haml]"}= @haml || ""
+      .grid_3
+        #box{:style => 'text-align:center'}
+          %p{:style => 'margin-bottom:0px;'} 
+            Want to play with 
+            %span{:style => 'color:green;font-size:1.2em;'} haml, 
+            %span{:style => 'color:orange;font-size:1.2em;'} sass, 
+            and 
+            %span{:style => 'color:blue;font-size:1.2em;'} coffee-script 
+            in a simple environment.  Check Out:
+          %a{:href => 'http://mercury.heroku.com', :style => 'font-size:1.2em;color:green;'} Mercury
+          %p Its easy to install and you can start playing with these new technologies in 5 minutes.
+        
+        %hr
+        %img{:src => 'http://jackhq.s3.amazonaws.com/images/jackhq-small.png'}
+        %p
+          This simple site created by Jack Russell Software...
+          %a{:href => "http://www.jackhq.com"} http://www.jackhq.com
+        %p
+          Source at
+          %a{:href => "http://github.com/twilson63/html2haml"} http://github.com/twilson63/html2haml
+      .clear
+      
+    %script{ :type => "text/javascript" }
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{ :type => "text/javascript" }
+      try {
+      var pageTracker = _gat._getTracker("UA-9459466-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
