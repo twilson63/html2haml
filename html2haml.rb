@@ -28,7 +28,7 @@ post "/*" do
 end
 
 def convert(html)
-  Haml::HTML.new(@html).render
+  Haml::HTML.new(@html, :erb => true).render
 end
 
 def to_xml
