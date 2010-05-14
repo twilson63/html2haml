@@ -3,7 +3,7 @@ source :gemcutter
 gem 'thin'
 gem 'sinatra', '1.0.0'
 gem 'hpricot'
-gem 'haml', '3.0.0.beta.1'
+gem 'haml', '3.0.0'
 gem 'json'
 gem 'builder'
 gem 'erubis'
