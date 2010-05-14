@@ -20,6 +20,8 @@
           %textarea{:id => "page_html", :name => "page[html]"}=h @html || ""
           %br
           %input.button{:type => "submit", :name => "commit", :value => "Convert"}
+          %input.button{:type => "reset", :name => "commit", :value => "Reset"}
+          
           %br
           %label{:for => "page_html"} 
             Haml 
