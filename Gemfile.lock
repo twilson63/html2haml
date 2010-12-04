@@ -2,24 +2,37 @@ GEM
   remote: http://rubygems.org/
   specs:
     abstract (1.0.0)
-    builder (2.1.2)
+    builder (3.0.0)
     daemons (1.1.0)
+    diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
-    haml (3.0.11)
-    hpricot (0.8.2)
+    haml (3.0.24)
+    hpricot (0.8.3)
     json (1.4.6)
     rack (1.2.1)
-    ruby_parser (2.0.4)
-      sexp_processor (~> 3.0)
-    sexp_processor (3.0.4)
-    sinatra (1.0)
+    rack-test (0.5.6)
       rack (>= 1.0)
+    rspec (2.2.0)
+      rspec-core (~> 2.2)
+      rspec-expectations (~> 2.2)
+      rspec-mocks (~> 2.2)
+    rspec-core (2.2.1)
+    rspec-expectations (2.2.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.2.0)
+    ruby_parser (2.0.5)
+      sexp_processor (~> 3.0)
+    sexp_processor (3.0.5)
+    sinatra (1.1.0)
+      rack (~> 1.1)
+      tilt (~> 1.1)
     thin (1.2.7)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
+    tilt (1.1)
 
 PLATFORMS
   ruby
@@ -27,9 +40,11 @@ PLATFORMS
 DEPENDENCIES
   builder
   erubis
-  haml (= 3.0.11)
+  haml (= 3.0.24)
   hpricot
   json
+  rack-test
+  rspec
   ruby_parser
-  sinatra (= 1.0.0)
+  sinatra (= 1.1.0)
   thin

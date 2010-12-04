@@ -1,48 +1,44 @@
+require "sinatra"
 require "haml"
 require "haml/html"
 require "json"
+require "net/http"
+require "open-uri"
+require "crack"
 
 helpers do
   include Rack::Utils
   alias_method :h, :escape_html
 end
 
-get "/" do
+get "/*" do
   haml :index
+end
+
+post '/url' do
+  @html = open("http://#{params[:q]}") { |f| f.read }
+  @haml = convert(@html)
+  haml :index
+
+end
+
+post '/api.json' do
+  puts request.body.to_s
+  @res = Crack::JSON.parse(request.body)
+  @html = @res[:page][:html]
+  @haml = convert(@html)
+  { :page => {:html => @html, :haml => @haml}}.to_json
 end
 
 
 post "/*" do
-  puts params
-  if params["page"]
-    @html = params["page"]["html"]
-    @haml = convert(@html)
-    if params[:splat].include?("json")
-      {:page => {:html => @html, :haml => @haml}}.to_json
-    elsif params[:splat].include?("xml")
-      to_xml
-    else
-      haml :index
-    end
-  end
+  @html = params["page"]["html"]
+  @haml = convert(@html)
+  haml :index
 end
 
 def convert(html)
-  Haml::HTML.new(@html, :erb => true, :xhtml => true).render
-end
-
-def to_xml
-  builder do |xml|
-    xml.instruct!
-    xml.page do
-      xml.html do
-        xml.cdata! @html
-      end
-      xml.haml do
-        xml.cdata! @haml
-      end
-    end
-  end  
+  Haml::HTML.new(html, :erb => true, :xhtml => true).render
 end
 
 

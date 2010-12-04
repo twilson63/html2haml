@@ -1,0 +1,14 @@
+%form{:method => "POST", :action => "/", :id => "page"}
+  %label{:for => "page_html"} 
+    Html 
+    %span{:style => 'color:purple'} (paste your html code and press convert)
+  %textarea{:id => "page_html", :name => "page[html]"}=h @html || ""
+  %br
+  %input.button{:type => "submit", :name => "commit", :value => "Convert"}
+  %input.button{:type => "reset", :name => "commit", :value => "Reset"}
+
+  %br
+  %label{:for => "page_html"} 
+    Haml 
+    %span{:style => 'color:green'} (Here is your html code in haml.)      
+  %textarea{:id => "page_haml", :name => "page[haml]"}= @haml || ""
