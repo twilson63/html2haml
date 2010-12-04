@@ -3,6 +3,7 @@ GEM
   specs:
     abstract (1.0.0)
     builder (3.0.0)
+    crack (0.1.8)
     daemons (1.1.0)
     diff-lcs (1.1.2)
     erubis (2.6.6)
@@ -39,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  crack
   erubis
   haml (= 3.0.24)
   hpricot
