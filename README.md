@@ -18,15 +18,6 @@ It is currently using haml 3.0.24!
   html2haml will download the page and convert it to haml
   in the haml text area below
   
-* send you html via web service
-
-  - XML
-
-<pre><code>curl -XPOST -d "<page><html><h1>Hello World</h1></html></page>" http://html2haml.heroku.com/api.xml</code></pre>
-
-  - JSON
-  
-      curl -
 ## Requirements for Development
 
 * Ruby 1.8.7
