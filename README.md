@@ -22,7 +22,7 @@ It is currently using haml 3.0.24!
 
   - XML
 
-      curl -XPOST -d "<page><html><h1>Hello World</h1></html></page>" http://html2haml.heroku.com/api.xml
+<pre><code>curl -XPOST -d "<page><html><h1>Hello World</h1></html></page>" http://html2haml.heroku.com/api.xml</code></pre>
 
   - JSON
   
