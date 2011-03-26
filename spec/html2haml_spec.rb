@@ -23,7 +23,7 @@ describe 'html2haml app' do
 
   it "should convert html 2 haml via api json" do
     post '/api.json', {:page => { :html => "<h1>Hello World</h1>"}}.to_json, "CONTENT_TYPE" => "application/json"
-    last_response.body.should == %q{{"page":{"html":"<h1>Hello World</h1>","haml":"%h1 Hello World\n"}}}
+    Crack::JSON.parse(last_response.body)["page"]["haml"].should =~ /%h1 Hello World/
   end
 
   it 'should not parse no page param via json' do
