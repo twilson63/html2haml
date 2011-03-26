@@ -1,7 +1,8 @@
-require "rubygems"
-#require "bundler"
-#Bundler.require
-require 'html2haml.rb'
+require "bundler"
+Bundler.require
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '.')
+require 'html2haml'
 
 set :environment, :production
 disable :run
