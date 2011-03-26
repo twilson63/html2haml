@@ -23,11 +23,14 @@ post '/url' do
 end
 
 post '/api.json' do
-  puts request.body.to_s
-  @res = Crack::JSON.parse(request.body)
-  @html = @res[:page][:html]
-  @haml = convert(@html)
-  { :page => {:html => @html, :haml => @haml}}.to_json
+  begin
+    res = Crack::JSON.parse(request.body.read.to_s)
+    @html = res["page"]["html"]
+    @haml = convert(@html)
+    { :page => {:html => @html, :haml => @haml}}.to_json
+  rescue
+    { :status => :error, :message => 'unable to parse json'}.to_json
+  end
 end
 
 

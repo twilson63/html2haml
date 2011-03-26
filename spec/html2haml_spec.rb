@@ -15,20 +15,20 @@ describe 'html2haml app' do
     post '/', :page => { :html => "<h1>Hello World</h1>"}
     last_response.body.should =~ /%h1 Hello World/
   end
-  
+
   it "should convert html 2 haml via url" do
     post '/url', :q => 'jackhq.com'
     last_response.body.should =~ /Jack Russell Software/
   end
-  
-  it "should convert html 2 haml via api xml" do
-    post '/api.xml', :page => { :html => "<h1>Hello World</h1>"}
-    last_response.body.should =~ /%h1 Hello World/
+
+  it "should convert html 2 haml via api json" do
+    post '/api.json', {:page => { :html => "<h1>Hello World</h1>"}}.to_json, "CONTENT_TYPE" => "application/json"
+    last_response.body.should == %q{{"page":{"html":"<h1>Hello World</h1>","haml":"%h1 Hello World\n"}}}
   end
-  
-  it 'should not parse no page param via xml' do
-    post '/api.xml'
-    last_response.body.should_not =~ /%h1 Hello World/
+
+  it 'should not parse no page param via json' do
+    post '/api.json'
+    last_response.body.should == { :status => :error, :message => 'unable to parse json'}.to_json
   end
 
 end
