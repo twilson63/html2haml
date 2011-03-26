@@ -26,14 +26,14 @@ GEM
     ruby_parser (2.0.5)
       sexp_processor (~> 3.0)
     sexp_processor (3.0.5)
-    sinatra (1.1.0)
+    sinatra (1.2.1)
       rack (~> 1.1)
-      tilt (~> 1.1)
+      tilt (< 2.0, >= 1.2.2)
     thin (1.2.7)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    tilt (1.1)
+    tilt (1.2.2)
 
 PLATFORMS
   ruby
@@ -48,5 +48,5 @@ DEPENDENCIES
   rack-test
   rspec
   ruby_parser
-  sinatra (= 1.1.0)
+  sinatra (~> 1.2.0)
   thin

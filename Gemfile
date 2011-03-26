@@ -1,7 +1,7 @@
 source :gemcutter
 
 gem 'thin'
-gem 'sinatra', '1.1.0'
+gem 'sinatra', '~> 1.2.0'
 gem 'hpricot'
 gem 'haml', '3.0.25'
 gem 'json'

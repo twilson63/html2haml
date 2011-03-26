@@ -2,7 +2,6 @@
   %h1 Html2Haml
   %p{:style => "margin:0px;"} Convert Html Snippets to Haml Snippets
   %hr
-  
   .grid_9
     %p Enter url of page you would like to convert to haml
     = haml :url_form, :layout => false
@@ -11,3 +10,13 @@
   .grid_3
     = haml :sidebar
   .clear
+  %p{:style => 'margin-top: 30px;'}
+    This simple site created by Jack Russell Software...
+    %a{:href => "http://www.jackhq.com"} http://www.jackhq.com
+  %p
+    Follow us on twitter
+    %a{:href => "http://twitter.com/jackhq"} @jackhq
+    for updates, feature requests or support
+  %p
+    Source at
+    %a{:href => "http://github.com/twilson63/html2haml"} http://github.com/twilson63/html2haml

@@ -1,0 +1,3 @@
+# 3/26/2011
+fixed issue with failing rake test and added json support
+also added a little better styling.
