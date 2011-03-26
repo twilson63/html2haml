@@ -18,6 +18,12 @@ It is currently using haml 3.0.25!
   html2haml will download the page and convert it to haml
   in the haml text area below
   
+* Now you can use json to do your conversions
+
+  # post {'page': { 'html': '<h1>Hello World</h1>' }}
+  # and receive {'page': { 'html': '<h1>Hello World</h1>', 'haml': '%h1 Hello World' }}
+  
+
 ## Requirements for Development
 
 * Ruby 1.8.7
