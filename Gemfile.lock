@@ -9,7 +9,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
-    haml (3.0.25)
+    haml (3.1.1)
     hpricot (0.8.3)
     json (1.4.6)
     rack (1.2.1)
@@ -42,7 +42,7 @@ DEPENDENCIES
   builder
   crack
   erubis
-  haml (= 3.0.25)
+  haml (= 3.1.1)
   hpricot
   json
   rack-test

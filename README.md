@@ -3,7 +3,7 @@
 html2haml is a sinatra web application that allows you to convert
 html 2 haml.
 
-It is currently using haml 3.0.25!
+It is currently using haml 3.1.1!
 
 ## Features
   
@@ -26,7 +26,7 @@ It is currently using haml 3.0.25!
 
 ## Requirements for Development
 
-* Ruby 1.8.7
+* Ruby 1.9.2
 * Bundler
 
 ## Development
