@@ -6,6 +6,8 @@ require "net/http"
 require "open-uri"
 require "crack"
 
+Encoding.default_internal = Encoding.default_external = "UTF-8"
+
 helpers do
   include Rack::Utils
   alias_method :h, :escape_html

@@ -6,23 +6,23 @@ html 2 haml.
 It is currently using haml 3.1.1!
 
 ## Features
-  
+
 * html text to haml text
-  
+
   Copy your html in the html text area and click on convert
   and html2haml will convert it to haml in the text box below.
-  
+
 * url to haml
 
   Enter a url to a web site and click submit
   html2haml will download the page and convert it to haml
   in the haml text area below
-  
+
 * Now you can use json to do your conversions
 
-  # post {'page': { 'html': '<h1>Hello World</h1>' }}
-  # and receive {'page': { 'html': '<h1>Hello World</h1>', 'haml': '%h1 Hello World' }}
-  
+post {'page': { 'html': '<h1>Hello World</h1>' }}
+and receive {'page': { 'html': '<h1>Hello World</h1>', 'haml': '%h1 Hello World' }}
+
 
 ## Requirements for Development
 
@@ -32,15 +32,15 @@ It is currently using haml 3.1.1!
 ## Development
 
     git clone git://github.com/twilson63/html2haml.git
-    
+
     bundle install
-    
+
     # run tests
     rake
-    
+
     # run application
     rackup
-    
+
     # open browser to http://localhost:9292
 
 ## Having problems
