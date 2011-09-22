@@ -15,6 +15,6 @@ group :test do
   gem 'rack-test'
 end
 
-configure :production do
+group :production do
   require 'newrelic_rpm'
 end
