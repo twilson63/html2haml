@@ -14,3 +14,7 @@ group :test do
   gem 'rspec'
   gem 'rack-test'
 end
+
+configure :production do
+  require 'newrelic_rpm'
+end
