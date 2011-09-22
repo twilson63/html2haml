@@ -9,6 +9,7 @@ gem 'builder'
 gem 'erubis'
 gem 'ruby_parser'
 gem 'crack'
+gem 'newrelic_rpm'
 
 group :test do
   gem 'rspec'

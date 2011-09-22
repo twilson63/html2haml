@@ -12,6 +12,7 @@ GEM
     haml (3.1.1)
     hpricot (0.8.3)
     json (1.4.6)
+    newrelic_rpm (3.1.2)
     rack (1.2.1)
     rack-test (0.5.6)
       rack (>= 1.0)
@@ -45,6 +46,7 @@ DEPENDENCIES
   haml (= 3.1.1)
   hpricot
   json
+  newrelic_rpm
   rack-test
   rspec
   ruby_parser
