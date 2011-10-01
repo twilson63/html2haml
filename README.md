@@ -19,10 +19,14 @@ It is currently using haml 3.1.1!
   in the haml text area below
 
 * Now you can use json to do your conversions
+  
+    Post: 
 
-post {'page': { 'html': '<h1>Hello World</h1>' }}
-and receive {'page': { 'html': '<h1>Hello World</h1>', 'haml': '%h1 Hello World' }}
+        {'page': { 'html': '<h1>Hello World</h1>' }}
 
+    and receive:
+
+        {'page': { 'html': '<h1>Hello World</h1>', 'haml': '%h1 Hello World' }}
 
 ## Requirements for Development
 
