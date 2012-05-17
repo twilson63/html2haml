@@ -7,7 +7,7 @@ GEM
     diff-lcs (1.1.3)
     erubis (2.7.0)
     eventmachine (0.12.10)
-    haml (3.1.3)
+    haml (3.1.6)
     hpricot (0.8.4)
     json (1.6.1)
     newrelic_rpm (3.1.2)
@@ -27,7 +27,7 @@ GEM
     sexp_processor (3.0.7)
     sinatra (1.2.6)
       rack (~> 1.1)
-      tilt (< 2.0, >= 1.2.2)
+      tilt (>= 1.2.2, < 2.0)
     thin (1.2.11)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -41,7 +41,7 @@ DEPENDENCIES
   builder
   crack
   erubis
-  haml
+  haml (= 3.1.6)
   hpricot
   json
   newrelic_rpm
