@@ -1,5 +1,5 @@
 %form{:method => "POST", :action => "/url", :id => 'hamlurl'}
   %label{:for => "url"} url
   %span http://
-  %input{:type => 'text', :name => 'q', :style => 'width: 200px'}
+  %input{:type => 'text', :name => 'q', :style => 'width: 200px', :required => true, :placeholder => 'foo.com'}
   %button Submit

@@ -1,0 +1,46 @@
+# Logfile created on 2012-09-09 08:29:54 -0400 by logger.rb/31641
+[09/09/12 08:29:54 -0400 air-2.local (55632)] INFO : Dispatcher: thin
+[09/09/12 08:29:54 -0400 air-2.local (55632)] INFO : Application: development
+[09/09/12 08:29:54 -0400 air-2.local (55632)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:29:54 -0400 air-2.local (55632)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55632
+[09/09/12 08:29:54 -0400 air-2.local (55632)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:32:23 -0400 air-2.local (55645)] INFO : Dispatcher: thin
+[09/09/12 08:32:23 -0400 air-2.local (55645)] INFO : Application: development
+[09/09/12 08:32:23 -0400 air-2.local (55645)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:32:23 -0400 air-2.local (55645)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55645
+[09/09/12 08:32:23 -0400 air-2.local (55645)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:34:32 -0400 air-2.local (55650)] INFO : Dispatcher: thin
+[09/09/12 08:34:32 -0400 air-2.local (55650)] INFO : Application: development
+[09/09/12 08:34:32 -0400 air-2.local (55650)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:34:32 -0400 air-2.local (55650)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55650
+[09/09/12 08:34:32 -0400 air-2.local (55650)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:37:07 -0400 air-2.local (55656)] INFO : Dispatcher: thin
+[09/09/12 08:37:07 -0400 air-2.local (55656)] INFO : Application: development
+[09/09/12 08:37:07 -0400 air-2.local (55656)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:37:07 -0400 air-2.local (55656)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55656
+[09/09/12 08:37:07 -0400 air-2.local (55656)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:37:32 -0400 air-2.local (55658)] INFO : Dispatcher: thin
+[09/09/12 08:37:32 -0400 air-2.local (55658)] INFO : Application: development
+[09/09/12 08:37:32 -0400 air-2.local (55658)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:37:32 -0400 air-2.local (55658)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55658
+[09/09/12 08:37:32 -0400 air-2.local (55658)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:40:12 -0400 air-2.local (55666)] INFO : Dispatcher: thin
+[09/09/12 08:40:12 -0400 air-2.local (55666)] INFO : Application: development
+[09/09/12 08:40:12 -0400 air-2.local (55666)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:40:12 -0400 air-2.local (55666)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55666
+[09/09/12 08:40:12 -0400 air-2.local (55666)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:40:50 -0400 air-2.local (55669)] INFO : Dispatcher: thin
+[09/09/12 08:40:50 -0400 air-2.local (55669)] INFO : Application: development
+[09/09/12 08:40:50 -0400 air-2.local (55669)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:40:50 -0400 air-2.local (55669)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55669
+[09/09/12 08:40:50 -0400 air-2.local (55669)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:42:56 -0400 air-2.local (55675)] INFO : Dispatcher: thin
+[09/09/12 08:42:56 -0400 air-2.local (55675)] INFO : Application: development
+[09/09/12 08:42:56 -0400 air-2.local (55675)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:42:56 -0400 air-2.local (55675)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55675
+[09/09/12 08:42:56 -0400 air-2.local (55675)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[09/09/12 08:45:25 -0400 air-2.local (55682)] INFO : Dispatcher: thin
+[09/09/12 08:45:25 -0400 air-2.local (55682)] INFO : Application: development
+[09/09/12 08:45:25 -0400 air-2.local (55682)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
+[09/09/12 08:45:25 -0400 air-2.local (55682)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 55682
+[09/09/12 08:45:25 -0400 air-2.local (55682)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log

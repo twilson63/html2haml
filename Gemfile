@@ -1,9 +1,9 @@
 source :gemcutter
 
 gem 'thin'
-gem 'sinatra', '~> 1.2.0'
+gem 'sinatra'
 gem 'hpricot'
-gem 'haml', '3.1.6'
+gem 'html2haml'
 gem 'json'
 gem 'builder'
 gem 'erubis'

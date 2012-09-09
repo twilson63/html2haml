@@ -1,5 +1,5 @@
 !!!
-%html
+%html{ :'ng-app' => true }
   %head
     %title HTML2Haml | Convert HTML Snippets to Haml
     - %w{ reset text 960 app }.each do |css|
@@ -11,6 +11,7 @@
       %a{:href => "http://haml-lang.com/"} Haml
     = yield
 
+    %script{ :src => 'http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.1/angular.min.js'}
     %script{ :type => "text/javascript" }
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

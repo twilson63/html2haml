@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..')
-require 'html2haml'
+require 'server'
 
 require 'rspec'
 require 'rack/test'

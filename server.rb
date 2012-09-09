@@ -1,6 +1,6 @@
 require "sinatra"
+require "html2haml"
 require "haml"
-require "haml/html"
 require "json"
 require "net/http"
 require "open-uri"
@@ -18,10 +18,13 @@ get "/*" do
 end
 
 post '/url' do
-  @html = open("http://#{params[:q]}") { |f| f.read }
-  @haml = convert(@html)
-  haml :index
-
+  begin
+    @html = open("http://#{params[:q]}") { |f| f.read }
+    @haml = convert(@html)
+    haml :index
+  rescue
+    redirect '/'
+  end
 end
 
 post '/api.json' do
@@ -45,5 +48,3 @@ end
 def convert(html)
   Haml::HTML.new(html, :erb => true, :xhtml => true).render
 end
-
-
