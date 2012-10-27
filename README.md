@@ -30,7 +30,7 @@ It is currently using haml 3.1.1!
 
 ## Requirements for Development
 
-* Ruby 1.9.2
+* Ruby 1.9.3
 * Bundler
 
 ## Development
