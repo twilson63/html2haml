@@ -46,5 +46,5 @@ post "/*" do
 end
 
 def convert(html)
-  Haml::HTML.new(html, :erb => true, :xhtml => true).render
+  Haml::HTML.new(html, :erb => true, :xhtml => false).render
 end

@@ -64,3 +64,19 @@
 [09/22/12 07:57:33 -0400 air-2.local (36556)] ERROR : No license key found.  Please edit your newrelic.yml file and insert your license key.
 [09/22/12 07:57:33 -0400 air-2.local (36556)] INFO : New Relic Ruby Agent 3.4.2 Initialized: pid = 36556
 [09/22/12 07:57:33 -0400 air-2.local (36556)] INFO : Agent Log at /Users/twilson63/code/html2haml/log/newrelic_agent.log
+[02/10/13 10:54:25 -0500 air-4.local (37576)] ERROR : Unable to read configuration file : can't convert nil into String
+[02/10/13 10:54:25 -0500 air-4.local (37576)] INFO : Environment: development
+[02/10/13 10:54:25 -0500 air-4.local (37576)] INFO : Dispatcher: thin
+[02/10/13 10:54:25 -0500 air-4.local (37576)] INFO : Application: development
+[02/10/13 10:54:25 -0500 air-4.local (37576)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/10/13 10:54:25 -0500 air-4.local (37576)] INFO : Installing Net instrumentation
+[02/10/13 10:54:25 -0500 air-4.local (37576)] INFO : Installing Sinatra instrumentation
+[02/10/13 10:54:25 -0500 air-4.local (37576)] INFO : Finished instrumentation
+[02/10/13 10:56:41 -0500 air-4.local (37586)] ERROR : Unable to read configuration file : can't convert nil into String
+[02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Environment: development
+[02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Dispatcher: thin
+[02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Application: development
+[02/10/13 10:56:41 -0500 air-4.local (37586)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Installing Net instrumentation
+[02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Installing Sinatra instrumentation
+[02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Finished instrumentation
