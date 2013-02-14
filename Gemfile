@@ -1,9 +1,10 @@
-source :gemcutter
+source :rubygems
 
 gem 'thin'
 gem 'sinatra'
 gem 'hpricot'
-gem 'html2haml', "~> 1.0.0.beta.2"
+gem 'haml', '~> 4.0.0'
+gem 'html2haml', '~> 1.0.0'
 gem 'json'
 gem 'builder'
 gem 'erubis'

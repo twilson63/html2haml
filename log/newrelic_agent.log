@@ -80,3 +80,11 @@
 [02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Installing Net instrumentation
 [02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Installing Sinatra instrumentation
 [02/10/13 10:56:41 -0500 air-4.local (37586)] INFO : Finished instrumentation
+[02/14/13 10:52:05 -0500 air-4.local (87172)] ERROR : Unable to read configuration file : can't convert nil into String
+[02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Environment: development
+[02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Dispatcher: thin
+[02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Application: development
+[02/14/13 10:52:05 -0500 air-4.local (87172)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Installing Net instrumentation
+[02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Installing Sinatra instrumentation
+[02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Finished instrumentation
