@@ -1,4 +1,4 @@
-source :rubygems
+source 'http://rubygems.org'
 
 gem 'thin'
 gem 'sinatra'
@@ -16,4 +16,3 @@ group :test do
   gem 'rspec'
   gem 'rack-test'
 end
-
