@@ -88,3 +88,59 @@
 [02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Installing Net instrumentation
 [02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Installing Sinatra instrumentation
 [02/14/13 10:52:05 -0500 air-4.local (87172)] INFO : Finished instrumentation
+[09/16/13 08:47:39 -0400 thing-4.local (85554)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 08:47:39 -0400 thing-4.local (85554)] INFO : Environment: development
+[09/16/13 08:47:39 -0400 thing-4.local (85554)] INFO : Dispatcher: thin
+[09/16/13 08:47:39 -0400 thing-4.local (85554)] INFO : Application: development
+[09/16/13 08:47:39 -0400 thing-4.local (85554)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 08:47:40 -0400 thing-4.local (85554)] INFO : Installing Net instrumentation
+[09/16/13 08:47:40 -0400 thing-4.local (85554)] INFO : Installing Sinatra instrumentation
+[09/16/13 08:47:40 -0400 thing-4.local (85554)] INFO : Finished instrumentation
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] INFO : Environment: development
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] INFO : Dispatcher: thin
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] INFO : Application: development
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] INFO : Installing Net instrumentation
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] INFO : Installing Sinatra instrumentation
+[09/16/13 08:52:29 -0400 thing-4.local (85571)] INFO : Finished instrumentation
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] INFO : Environment: development
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] INFO : Dispatcher: thin
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] INFO : Application: development
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] INFO : Installing Net instrumentation
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] INFO : Installing Sinatra instrumentation
+[09/16/13 08:54:29 -0400 thing-4.local (85576)] INFO : Finished instrumentation
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] INFO : Environment: development
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] INFO : Dispatcher: thin
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] INFO : Application: development
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] INFO : Installing Net instrumentation
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] INFO : Installing Sinatra instrumentation
+[09/16/13 08:57:24 -0400 thing-4.local (85584)] INFO : Finished instrumentation
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] INFO : Environment: development
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] INFO : Dispatcher: thin
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] INFO : Application: development
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] INFO : Installing Net instrumentation
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] INFO : Installing Sinatra instrumentation
+[09/16/13 09:00:21 -0400 thing-4.local (85591)] INFO : Finished instrumentation
+[09/16/13 09:00:56 -0400 thing-4.local (85597)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 09:00:56 -0400 thing-4.local (85597)] INFO : Environment: development
+[09/16/13 09:00:56 -0400 thing-4.local (85597)] INFO : Dispatcher: thin
+[09/16/13 09:00:56 -0400 thing-4.local (85597)] INFO : Application: development
+[09/16/13 09:00:56 -0400 thing-4.local (85597)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 09:00:57 -0400 thing-4.local (85597)] INFO : Installing Net instrumentation
+[09/16/13 09:00:57 -0400 thing-4.local (85597)] INFO : Installing Sinatra instrumentation
+[09/16/13 09:00:57 -0400 thing-4.local (85597)] INFO : Finished instrumentation
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] ERROR : Unable to read configuration file : can't convert nil into String
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Environment: development
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Dispatcher: thin
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Application: development
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Installing Net instrumentation
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Installing Sinatra instrumentation
+[09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Finished instrumentation
