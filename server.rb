@@ -31,13 +31,13 @@ post '/api.json' do
   begin
     res = Crack::JSON.parse(request.body.read.to_s)
     @html = res["page"]["html"]
-    @haml = convert(@html)
+    options = res["options"] || {}
+    @haml = convert(@html, options)
     { :page => {:html => @html, :haml => @haml}}.to_json
   rescue
     { :status => :error, :message => 'unable to parse json'}.to_json
   end
 end
-
 
 post "/*" do
   @html = params["page"]["html"]
@@ -45,7 +45,14 @@ post "/*" do
   haml :index
 end
 
-def convert(html)
-  Html2haml::HTML.new(html, :erb => true, :xhtml => false, 
-    :ruby19_style_attributes => true).render
+def symbolize_keys(hash)
+  hash.reduce({}) do |memo, (key, value)|
+    memo[key.to_sym] = value
+    memo
+  end
+end
+
+def convert(html, options = {})
+  options = {:erb => true, :xhtml => false}.merge(symbolize_keys(options))
+  Html2haml::HTML.new(html, options).render
 end
