@@ -26,6 +26,11 @@ describe 'html2haml app' do
     Crack::JSON.parse(last_response.body)["page"]["haml"].should =~ /%h1 Hello World/
   end
 
+  it "should convert html 2 haml with options via api json" do
+    post '/api.json', {:page => { :html => "<input type='text'>" }, :options => { :html_style_attributes => true } }.to_json, "CONTENT_TYPE" => "application/json"
+    Crack::JSON.parse(last_response.body)["page"]["haml"].should include("%input(type=\"text\"")
+  end
+
   it 'should not parse no page param via json' do
     post '/api.json'
     last_response.body.should == { :status => :error, :message => 'unable to parse json'}.to_json
