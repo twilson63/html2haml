@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
-
 ruby '1.9.3'
 
 gem 'thin'
+gem 'tilt', '>= 1.3.4', '~> 1.3'
 gem 'sinatra'
 gem 'hpricot'
 gem 'haml', '~> 4.0.0'

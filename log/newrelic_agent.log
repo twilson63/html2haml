@@ -144,3 +144,39 @@
 [09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Installing Net instrumentation
 [09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Installing Sinatra instrumentation
 [09/16/13 09:01:14 -0400 thing-4.local (85600)] INFO : Finished instrumentation
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] ERROR : Unable to read configuration file : can't convert nil into String
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] INFO : Environment: development
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] INFO : Dispatcher: thin
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] INFO : Application: development
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] INFO : Installing Sinatra instrumentation
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] INFO : Installing Net instrumentation
+[08/16/14 07:36:31 -0400 mac-ubuntu (1982)] INFO : Finished instrumentation
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Starting the New Relic agent in "development" environment.
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] WARN : No configuration file found. Working directory = /home/twilson63/code/html2haml
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] WARN : Looked in these locations (based on defaults): /home/twilson63/code/html2haml/config/newrelic.yml, /home/twilson63/code/html2haml/newrelic.yml, /home/twilson63/code/html2haml/config/newrelic.yml, /home/twilson63/code/html2haml/newrelic.yml, /home/twilson63/.newrelic/newrelic.yml, /home/twilson63/newrelic.yml
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Environment: development
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : No known dispatcher detected.
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Application: development
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Installing Sinatra instrumentation
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Installing Net instrumentation
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Installing deferred Rack instrumentation
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Installing Rack::Builder middleware instrumentation
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Finished instrumentation
+[08/16/14 07:58:16 -0400 mac-ubuntu (3264)] INFO : Doing deferred dependency-detection before Rack startup
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Starting the New Relic agent in "development" environment.
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] WARN : No configuration file found. Working directory = /home/twilson63/code/html2haml
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] WARN : Looked in these locations (based on defaults): /home/twilson63/code/html2haml/config/newrelic.yml, /home/twilson63/code/html2haml/newrelic.yml, /home/twilson63/code/html2haml/config/newrelic.yml, /home/twilson63/code/html2haml/newrelic.yml, /home/twilson63/.newrelic/newrelic.yml, /home/twilson63/newrelic.yml
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Environment: development
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : No known dispatcher detected.
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Application: development
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Installing Sinatra instrumentation
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Installing Net instrumentation
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Installing deferred Rack instrumentation
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Installing Rack::Builder middleware instrumentation
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Finished instrumentation
+[08/16/14 07:58:29 -0400 mac-ubuntu (3270)] INFO : Doing deferred dependency-detection before Rack startup
