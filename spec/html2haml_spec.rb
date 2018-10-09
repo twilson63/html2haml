@@ -23,12 +23,12 @@ describe 'html2haml app' do
 
   it "should convert html 2 haml via api json" do
     post '/api.json', {:page => { :html => "<h1>Hello World</h1>"}}.to_json, "CONTENT_TYPE" => "application/json"
-    Crack::JSON.parse(last_response.body)["page"]["haml"].should =~ /%h1 Hello World/
+    MultiJson.load(last_response.body)["page"]["haml"].should =~ /%h1 Hello World/
   end
 
   it "should convert html 2 haml with options via api json" do
     post '/api.json', {:page => { :html => "<input type='text'>" }, :options => { :html_style_attributes => true } }.to_json, "CONTENT_TYPE" => "application/json"
-    Crack::JSON.parse(last_response.body)["page"]["haml"].should include("%input(type=\"text\"")
+    MultiJson.load(last_response.body)["page"]["haml"].should include("%input(type=\"text\"")
   end
 
   it 'should not parse no page param via json' do

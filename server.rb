@@ -4,7 +4,7 @@ require "haml"
 require "json"
 require "net/http"
 require "open-uri"
-require "crack"
+require "multi_json"
 
 Encoding.default_internal = Encoding.default_external = "UTF-8"
 
@@ -29,7 +29,7 @@ end
 
 post '/api.json' do
   begin
-    res = Crack::JSON.parse(request.body.read.to_s)
+    res = MultiJson.load(request.body.read.to_s)
     @html = res["page"]["html"]
     options = res["options"] || {}
     @haml = convert(@html, options)
@@ -53,6 +53,6 @@ def symbolize_keys(hash)
 end
 
 def convert(html, options = {})
-  options = {:erb => true, :xhtml => false}.merge(symbolize_keys(options))
+  options = {:erb => true, :xhtml => false, ruby19_style_attributes: true}.merge(symbolize_keys(options))
   Html2haml::HTML.new(html, options).render
 end

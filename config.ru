@@ -6,9 +6,9 @@ require 'server'
 
 set :environment, :production
 disable :run
-
-configure :production do
-  require 'newrelic_rpm'
-end
+#
+# configure :production do
+#   require 'newrelic_rpm'
+# end
 
 run Sinatra::Application
